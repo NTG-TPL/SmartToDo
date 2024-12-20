@@ -38,7 +38,7 @@
 - Python 3.11
 
 > ### Сборка и запуск с помощью Docker
-> 1. **Перейдите в папку:** `cd fastapi-todo-list`
+> 1. **Перейдите в папку:** `cd SmartToDo`
 > 2. **Соберите Docker образ:** `docker build -t todo_app .`
 > 3. **Запустите контейнер:** `docker run -d -p 8000:8000 -v $(pwd)/logs:/code/logs todo_app`. Приложение будет доступно по адресу http://0.0.0.0:8000.
 
