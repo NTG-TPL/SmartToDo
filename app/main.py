@@ -6,21 +6,17 @@ from typing import List, Optional
 
 app = FastAPI()
 
-# Модель данных для TODO
 class Todo(BaseModel):
     id: int
     title: str
     description: Optional[str] = None
     completed: bool = False
 
-# В памяти хранилище для TODO
 todos: List[Todo] = []
 
-# Настройка логирования
 log_directory = "logs"
 log_file = os.path.join(log_directory, "app.log")
 
-# Создаем директорию для логов, если она не существует
 os.makedirs(log_directory, exist_ok=True)
 
 logging.basicConfig(
