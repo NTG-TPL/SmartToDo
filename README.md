@@ -25,7 +25,8 @@
 
 > ### Сборка и запуск с помощью Docker
 > 1. `cd SmartToDo`
-> 2. `docker compose up --build`. Приложение будет доступно по адресу http://localhost:8000.
+> 2. `cp .env.example .env`
+> 3. `docker compose up --build`. Приложение будет доступно по адресу http://localhost:8000.
 
 > **Swagger:** http://localhost:8000/docs
 
